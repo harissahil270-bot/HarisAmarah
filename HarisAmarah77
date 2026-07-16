@@ -3,6 +3,175 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HarisAmarah ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#000,#1a1a1a,#000);
+overflow:hidden;
+color:white;
+}
+
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+background:url("https://www.transparenttextures.com/patterns/stardust.png");
+animation:move 60s linear infinite;
+opacity:.4;
+}
+
+@keyframes move{
+from{transform:translateY(0);}
+to{transform:translateY(-1000px);}
+}
+
+.card{
+position:relative;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+padding:30px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 0 40px rgba(255,215,0,.4);
+z-index:2;
+max-width:380px;
+}
+
+h1{
+font-size:55px;
+color:gold;
+text-shadow:0 0 20px gold;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{text-shadow:0 0 10px gold;}
+to{text-shadow:0 0 35px gold;}
+}
+
+p{
+margin-top:10px;
+font-size:20px;
+}
+
+img{
+width:250px;
+height:250px;
+object-fit:cover;
+border-radius:20px;
+margin-top:20px;
+border:4px solid gold;
+box-shadow:0 0 30px gold;
+transition:.5s;
+}
+
+img:hover{
+transform:scale(1.05);
+}
+
+button{
+margin-top:25px;
+padding:14px 35px;
+border:none;
+border-radius:30px;
+background:gold;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.4s;
+}
+
+button:hover{
+transform:scale(1.08);
+background:white;
+}
+
+.heart{
+position:absolute;
+color:red;
+font-size:20px;
+animation:float 7s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+20%{opacity:1;}
+100%{
+transform:translateY(-100px);
+opacity:0;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="card">
+
+<h1>HarisAmarah</h1>
+
+<p>✨ Welcome To Our Journey ✨</p>
+
+<img src="photo.jpg">
+
+<h2 style="margin-top:20px;color:gold;">
+❤️ Our First Meetup ❤️
+</h2>
+
+<p>Forever Together 💕</p>
+
+<button onclick="alert('Welcome to HarisAmarah ❤️')">
+Enter
+</button>
+
+</div>
+
+<script>
+
+for(let i=0;i<25;i++){
+
+let h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML="❤️";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.animationDuration=(5+Math.random()*5)+"s";
+
+h.style.fontSize=(15+Math.random()*25)+"px";
+
+document.body.appendChild(h);
+
+}
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HarisAmarah</title>
 
 <style>
